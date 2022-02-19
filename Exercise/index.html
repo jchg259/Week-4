@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Form </title>
+    <meta charset="UTF-8"> 
+    <title>Callie Gray's Sample Form </title>
+    <style>
+        body{
+            background-color: rgb(241, 235, 243);
+        }
+        table{
+            border-collapse: separate;
+            border-spacing: 0 15px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        td{
+            background-color: white;
+            border-right:1px solid black;
+            border-left: 1px solid black;
+            border-top:1px solid black;
+            border-bottom: 1px solid black;
+            border-radius:6px;
+        }
+        .header{
+            border-spacing: 0 0px;
+            background-color: white;
+            border:1px solid black;
+            border-radius:6px;
+        }
+        
+    </style>
 </head>
 <body>
-<h3>
-    Form Design Exercise:
-</h3>
-<p style="font-family: Helvetica;font-size: medium">
-    Disregarding the style of the page: <br>
-    <a href="https://forms.gle/qjz8MKR4YXWkWCVLA">https://forms.gle/qjz8MKR4YXWkWCVLA</a>
-</p>
-<p style="font-family: Helvetica;font-size: medium">
-    Try to replicate the format of the form in the page.<br>
-    Make use of "Label", "Input" and "Table".
-</p>
+    <form>
+    <table>
+    <th>
+    <tr style = "font-family: sans-serif; font-size: xx-large">
+        <td >
+            Sample Form 
+        </td>
+    </tr>
+    <tr>
+        <td style = "font-family: sans-serif;" > 
+            Choose a topic, and research interest for the individual visualization project.
+        </td>
+    </tr>
+    <tr>
+        <td style = "font-family: sans-serif; font-weight: bold;"> 
+            Sign in with google account
+        </td>
+    </tr>
+    <tr>
+        <td style = "font-family: sans-serif; color: red;" > 
+            *Required
+        </td>
+    </tr>
+    </th>
+    <tbody>
+        <tr>
+            <td style = "font-family: sans-serif;">
+                <label for="email">Email*</label><br>
+                <input type="email" id="email" name="email" value="your email" style="color:gray"><br>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="fname" value="your answer" style="color:gray"> <br>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lname" value="your answer" style="color:gray"><br>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+            <label for="rinterest"> Reasearch Area (list at least 3)*</label><br>
+            <textarea id="rinterest" name="rinterest" value="your answer" rows="5" cols="30">
+            </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+                <label for="ptitle">Project Title - (e.g. income vs education US Census)*</label><br>
+                <input type="text" id="ptitle" name="ptitle" value="your answer" style="color:gray"><br>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+                    <label for="tskills">Top Skills*</label><br>
+                    <input type="checkbox" id="type1" name="type1" value="SQL">
+                    <label for="type1"> SQL</label><br>
+                    <input type="checkbox" id="type2" name="type2" value="Python">
+                    <label for="type2"> Python programming</label><br>
+                    <input type="checkbox" id="type3" name="type3" value="Matlab">
+                    <label for="type3"> Matlab</label><br>
+                    <input type="checkbox" id="type4" name="type4" value="D3jJS">
+                    <label for="type4"> D3js and Javascript</label><br>
+                    <input type="checkbox" id="type5" name="type5" value="C#">
+                    <label for="type5"> C# VB.net</label><br>
+                    <input type="checkbox" id="type6" name="type6" value="PHP">
+                    <label for="type6"> PHP</label><br>
+                    <input type="checkbox" id="type7" name="type7" value="ode.JS">
+                    <label for="type7"> ode.JS</label><br>
+                    <input type="checkbox" id="type8" name="type8" value="Webdt">
+                    <label for="type8"> Web design tools (e.g. Wordpress)</label><br>
+                    <input type="checkbox" id="type9" name="type9" value="HTMLCSS">
+                    <label for="type9"> HTML and CSS</label><br>
+                    <input type="checkbox" id="type10" name="type10" value="Excel">
+                    <label for="type10"> Excel</label><br>
+                    <input type="checkbox" id="type11" name="type11" value="PowerBI">
+                    <label for="type11"> Power BI</label><br>
+                    <input type="checkbox" id="type12" name="type12" value="Tableau">
+                    <label for="type13"> Tableau</label><br>
+                    <input type="checkbox" id="type14" name="type14" value="Option13">
+                    <label for="type14"> Option13</label><br>
+                    <input type="checkbox" id="type15" name="type15" value="Other">
+                    <label for="type15"> Other: <input type="text" id="type15" name="typ15"></label><br>
+            </td>
+        </tr>
+        <tr>
+            <td style = "font-family: sans-serif;">
+            <label for="sandq"> Suggestions or Questions</label><br>
+            <textarea id="sandq" name="sandq" rows="5" cols="30">
+            </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style = "text-align: center; background-color: rgb(241, 235, 243)">
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+    </tbody>
+</table>
+</form>
 </body>
 </html>
